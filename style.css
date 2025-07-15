@@ -1,0 +1,86 @@
+/* Reset some default styles */
+body {
+  background: url('Background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-size: 2rem;
+  padding: 1rem;
+  line-height: 1.6;
+  font-family: Segoe UI, "Tahoma", Geneva, Verdana, sans-serif;
+}
+
+
+
+/* Header */
+header {
+  text-align: center;
+  background: linear-gradient(to right, rgba(75, 108, 183, 0.6), rgba(24, 40, 72, 0.6));
+  color: white;
+  padding: 40px;
+}
+
+.profile-pic img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+}
+
+/* Section Container */
+.info-section {
+  background: linear-gradient(to right, rgba(123, 134, 160, 0.6), rgba(26, 96, 66, 0.6));
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 800px;
+}
+
+/* Section Title */
+.info-section h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #580443;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.clickable-title {
+  cursor: pointer;
+  color: #49084c;
+  transition: color 0.3s;
+}
+
+.clickable-title:hover {
+  color: #080006;
+}
+
+/* Section Content */
+.info-content {
+  font-size: 1.1em;
+  line-height: 1.4;
+  color: #fcfbfb;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  font-style: Verdana;
+}
+
+/* Certificates Gallery */
+.certificates-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.certificates-gallery img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: transform 0.3s;
+}
+
+.certificates-gallery img:hover {
+  transform: scale(1.05);
+}

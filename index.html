@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elfie Arcala Eguia - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="profile-pic">
+      <img src="profile.jpg" alt="Profile Picture" />
+    </div>
+    <h1>Elfie Arcala Eguia</h1>
+
+  </header>
+
+  <!-- ABOUT -->
+  <section class="info-section">
+    <h2 onclick="toggleSection('about-content')" class="clickable-title">ABOUT ME</h2>
+    <div id="about-content" class="info-content" style="display: none;">
+      <p>I am a graduate of Bachelor of Science in Information System and an experienced system developer with a focus on backend development using C#. 
+      Continuously expanding my knowledge of new technologies.</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="info-section">
+    <h2 onclick="toggleSection('projects-content')" class="clickable-title">PROJECTS</h2>
+    <div id="projects-content" class="info-content" style="display: none;">
+      <ul>
+        <li>Portfolio Website</li>
+        <li>Barangay Health Status</li>
+        <li>Integrated Medical Records with Medicine Inventory Management System</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="info-section">
+    <h2 onclick="toggleSection('contact-content')" class="clickable-title">CONTACT</h2>
+    <div id="contact-content" class="info-content" style="display: none;">
+      <p>Email: eguiaelfie7@email.com</p>
+      <p>Phone: 09485820005</p>
+      <p>Facebook: Elfie Arcala Eguia</p>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section class="info-section">
+    <h2 onclick="toggleSection('certificates-content')" class="clickable-title">MY CERTIFICATES</h2>
+    <div id="certificates-content" class="certificates-gallery" style="display: none;">
+      <img src="cert1.png" alt="Certificate 1" />
+      <img src="cert2.png" alt="Certificate 2" />
+      <img src="cert3.png" alt="Certificate 3" />
+      <img src="cert.png" alt="Certificate 4" />
+      <img src="certx.jpg" alt="Certificate 5" />
+    </div>
+  </section>
+
+  <script>
+    function toggleSection(id) {
+      const section = document.getElementById(id);
+      section.style.display = section.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+</html>
